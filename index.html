@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <style>
+        body {
+            background-color: #9B59B6;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #neelam {
+            width: 296px;
+            border: 2px solid #6f6f6f;
+            background-color: #85C1E9;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ff4561;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            font-size: 20px;
+            box-sizing: border-box;
+            border: none;
+            border-radius: 5px;
+            background-color: #fff;
+            color: #495069;
+        }
+
+        input:hover {
+            background-color: #b0d2cf;
+        }
+
+        input:active {
+            top: 1px;
+            box-shadow: none;
+        }
+
+        #display {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 30px;
+            text-align: right;
+            background-color: #bcbd95;
+            border-radius: 5px;
+        }
+
+        .operator {
+            background-color: #cee9ea;
+        }
+
+        .operator:hover {
+            background-color: #b0d2cf;
+        }
+
+        #clear {
+            background-color: #ff9fa8;
+        }
+
+        #clear:hover {
+            background-color: #f297a0;
+        }
+    </style>
+</head>
+<body>
+    <div id="neelam">
+        <h3>SIMPLE CALCULATOR</h3>
+        <form name="calc">
+            <input type="text" name="display" id="display" value="" readonly>
+            <table>
+                <tr>
+                    <td><input type="button" value="1" onClick="calc.display.value+='1'"></td>
+                    <td><input type="button" value="2" onClick="calc.display.value+='2'"></td>
+                    <td><input type="button" value="3" onClick="calc.display.value+='3'"></td>
+                    <td><input type="button" class="operator" value="+" onClick="calc.display.value+='+'"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="4" onClick="calc.display.value+='4'"></td>
+                    <td><input type="button" value="5" onClick="calc.display.value+='5'"></td>
+                    <td><input type="button" value="6" onClick="calc.display.value+='6'"></td>
+                    <td><input type="button" class="operator" value="-" onClick="calc.display.value+='-'"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="7" onClick="calc.display.value+='7'"></td>
+                    <td><input type="button" value="8" onClick="calc.display.value+='8'"></td>
+                    <td><input type="button" value="9" onClick="calc.display.value+='9'"></td>
+                    <td><input type="button" class="operator" value="*" onClick="calc.display.value+='*'"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="clear" value="C" onClick="calc.display.value=''"></td>
+                    <td><input type="button" value="0" onClick="calc.display.value+='0'"></td>
+                    <td><input type="button" class="operator" value="/" onClick="calc.display.value+='/'"></td>
+                    <td><input type="button" class="operator" value="=" onClick="calc.display.value=eval(calc.display.value)"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
