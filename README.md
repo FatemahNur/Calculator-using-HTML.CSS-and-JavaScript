@@ -14,3 +14,6 @@ Click on an operator button (+, -, *, /) to select the operation.
 Enter the second number.
 Click on the "=" button to see the result.
 Use the "C" button to clear the display.
+
+# License
+This project is licensed under the MIT License - see the LICENSE file for details.
