@@ -15,5 +15,8 @@ Enter the second number.
 Click on the "=" button to see the result.
 Use the "C" button to clear the display.
 
+# Demo
+[https://fatemahnur.github.io/Calculator-using-HTML.CSS-and-JavaScript/]
+
 # License
 This project is licensed under the MIT License - see the LICENSE file for details.
